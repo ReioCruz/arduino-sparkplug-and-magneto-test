@@ -46,7 +46,7 @@ void startSparkPlugTest() {
   int inputState = digitalRead(SPARK_PLUG_PIN);
 
   if (inputState == HIGH) {
-    String data = "P"; // Pass
+    String data = "F"; // Pass
     sendBtData(data);
 
     // lcd.setCursor(0,1);
@@ -54,7 +54,7 @@ void startSparkPlugTest() {
   }
 
   if (inputState == LOW) {
-    String data = "F"; // Fail
+    String data = "P"; // Fail
     sendBtData(data);
 
     // lcd.setCursor(0,1);
